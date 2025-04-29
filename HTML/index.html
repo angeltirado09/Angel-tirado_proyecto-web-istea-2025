@@ -4,23 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El mercadito</title>
-    <link rel="stylesheet" href="/CSS/styles.css">
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>El mercadito</h1>
-        <div>
-            <img src="./Imagenes/El Mercadito - Logo.png" alt="Logo El Mercadito" width="500" height="500">
-        </div>
+    <header class="encabezado">
+        <h1 class="encabezado">El mercadito</h1>
+    </header>
+    <img href="/HTML/Imagenes/El Mercadito - Logo.png" alt="Logo El Mercadito" width="500" height="500">
         <nav>
             <ul>
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#">Categorias</a></li>
-                <li><a href="/usuario.html">Usuario</a></li>
+                <li><a href="usuario.html">Usuario</a></li>
                 <li><a href="#">Carrito</a></li>
             </ul>
         </nav>
-    </header>
+
+        <section class="buscador">
+        <form action="" method="GET">
+            <input type="search" name="buscador" placeholder="Buscar..." />
+            <button type="submit">Buscar</button>
+          </form>
+        </section>
 
     <h2>Ofertas del día</h2> 
     
@@ -102,9 +108,13 @@
         </section>
     </main>
     <footer>
-        <p>Todos los derechos reservados &copy;</p>
+        <div class="derechos">
+        <p>2001 - 2025 El Mercadito &copy; Todos los derechos reservados</p>
+        </div>
+        <div class="links_contact&nosotros">
         <a href="./contact.html">Contacto</a>
         <a href="./nosotros.html">Nosotros</a>
+        </div>
     </footer>
 </body>
 </html>
