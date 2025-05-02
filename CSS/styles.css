@@ -4,6 +4,37 @@
     font-optical-sizing: auto;
     font-weight: bolder;
     font-style: normal;
+    font-size: 52px;
   }
 
-  
+.titles{
+    text-align: center;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+#title-card h2.titles {
+    font-size: 20px;
+    text-align: left;
+}
+
+.card {
+    p{
+      font-family: "Lexend", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 200;
+      font-style: normal;
+      font-size: 14px;
+    }
+    
+    li{
+      font-family: "Lexend", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 200;
+      font-style: normal;
+      font-size: 14px;
+      font-style: italic;
+    }
+}
