@@ -1,11 +1,45 @@
 .encabezado {
+    img {
+    width: 80px;
+    height: auto; /* Mantiene proporción */
+    }
+    h1{
+      margin:0;
+
+    }
     text-align: center;
     font-family: "Lexend", sans-serif;
     font-optical-sizing: auto;
     font-weight: bolder;
     font-style: normal;
     font-size: 52px;
-  }
+    background-color: #FFE600;
+    margin: 0;
+    padding: 10px 0;
+    position: fixed; /* Fijo en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ocupa todo el ancho */
+    z-index: 1000; /* Encima de otros elementos */
+
+    li{
+      font-family: "Lexend", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 200;
+      font-style: normal;
+      font-size: 14px;
+      font-weight: 200;
+      margin: 0;
+    }
+
+}
+
+body{
+  margin-top: auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: auto;
+}
 
 .titles{
     text-align: center;
@@ -38,3 +72,8 @@
       font-style: italic;
     }
 }
+
+body {
+  background-color: #fcf8d5;
+}
+
