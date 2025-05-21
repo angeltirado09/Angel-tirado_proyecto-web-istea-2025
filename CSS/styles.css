@@ -1,26 +1,26 @@
 .encabezado {
-    img {
-    width: 80px;
-    height: auto; /* Mantiene proporción */
-    }
-    h1{
-      margin:0;
-
-    }
     text-align: center;
     font-family: "Lexend", sans-serif;
     font-optical-sizing: auto;
     font-weight: bolder;
     font-style: normal;
-    font-size: 52px;
+    font-size: 32px; /* Reducido de 52px */
     background-color: #FFE600;
     margin: 0;
-    padding: 10px 0;
+    padding: 5px 0; /* Reducido de 10px */
     position: fixed; /* Fijo en la parte superior */
     top: 0;
     left: 0;
     width: 100%; /* Ocupa todo el ancho */
     z-index: 1000; /* Encima de otros elementos */
+
+    .encabezado img {
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 40px; /* Ajusta el tamaño según tu logo */
+}
 
     li{
       font-family: "Lexend", sans-serif;
@@ -34,8 +34,46 @@
 
 }
 
+header.encabezado {
+    background: #f9e24c;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    vertical-align: middle;
+}
+
+.nav-list {
+    display: flex;
+    gap: 30px;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.search-form {
+    margin-left: auto;
+}
+
 body{
-  margin-top: auto;
+  margin-top: 250px; /* Espacio para el encabezado fijo */
   margin-right: auto;
   margin-left: auto;
   margin-bottom: auto;
@@ -47,6 +85,7 @@ body{
     font-optical-sizing: auto;
     font-weight: 900;
     font-style: normal;
+    margin-top: 20px; /* Espacio adicional para asegurar visibilidad */
 }
 
 #title-card h2.titles {
@@ -77,3 +116,12 @@ body {
   background-color: #fcf8d5;
 }
 
+.ofertas-banner {
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 24px;
+    font-size: 2.5em;
+    color: #1d1414;
+    font-family: 'Cal Sans', 'Lexend', Arial, sans-serif;
+    font-weight: 900;
+}

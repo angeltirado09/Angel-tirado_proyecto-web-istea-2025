@@ -11,29 +11,26 @@
 </head>
 <body>
     <header class="encabezado">
-    <h1 class="encabezado">El mercadito</h1>
-    <img href="/HTML/Imagenes/El Mercadito - Logo.png" alt="Logo El Mercadito" width="500" height="500">
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Categorias</a></li>
-                <li><a href="usuario.html">Usuario</a></li>
-                <li><a href="#">Carrito</a></li>
-            </ul>
-        </nav>
-    
-        <section>
-        <form action="" method="GET">
-            <input type="search" name="buscador" placeholder="Buscar..." />
-            <button type="submit">Buscar</button>
-          </form>
-        </section>
+        <div class="header-container">
+            <a href="#" class="logo-link">
+                <img src="Imagenes/El Mercadito - Logo.png" alt="Logo El Mercadito" width="120" height="120" class="logo-img">
+            </a>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Categorias</a></li>
+                    <li><a href="usuario.html">Usuario</a></li>
+                    <li><a href="#">Carrito</a></li>
+                </ul>
+            </nav>
+            <form action="" method="GET" class="search-form">
+                <input type="search" name="buscador" placeholder="Buscar..." />
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
     </header>
 
-    <div class="titles">
-    <h2>Ofertas del día</h2> 
-    </div>
-
+    <h2 class="ofertas-banner">¡Ofertas del día!</h2>
     <main>
         <section>
             
