@@ -4,22 +4,22 @@
     font-optical-sizing: auto;
     font-weight: bolder;
     font-style: normal;
-    font-size: 32px; /* Reducido de 52px */
+    font-size: 32px;
     background-color: #FFE600;
     margin: 0;
-    padding: 5px 0; /* Reducido de 10px */
-    position: fixed; /* Fijo en la parte superior */
+    padding: 5px 0;
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100%; /* Ocupa todo el ancho */
-    z-index: 1000; /* Encima de otros elementos */
+    width: 100%;
+    z-index: 1000;
 
     .encabezado img {
     position: absolute;
     left: 30px;
     top: 50%;
     transform: translateY(-50%);
-    height: 40px; /* Ajusta el tamaño según tu logo */
+    height: 40px;
 }
 
     li{
@@ -35,7 +35,7 @@
 }
 
 header.encabezado {
-    background: #f9e24c;
+    background: #ffd718;
     border-bottom: 1px solid #eee;
     padding: 10px 0;
 }
@@ -72,20 +72,21 @@ header.encabezado {
     margin-left: auto;
 }
 
-body{
-  margin-top: 250px; /* Espacio para el encabezado fijo */
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: auto;
+body {
+    margin-top: 250px;
+    font-family: 'Cal Sans', 'Lexend', Arial, sans-serif;
+}
+
+/* Estilos para SOLO para usuario.html*/
+#usuario-fondo {
+  background: #ffd718;
 }
 
 .titles{
     text-align: center;
     font-family: "Lexend", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 900;
-    font-style: normal;
-    margin-top: 20px; /* Espacio adicional para asegurar visibilidad */
+    margin-top: 20px; 
 }
 
 #title-card h2.titles {
@@ -112,10 +113,6 @@ body{
     }
 }
 
-body {
-  background-color: #fcf8d5;
-}
-
 .ofertas-banner {
     text-align: center;
     margin-top: 8px;
@@ -124,4 +121,40 @@ body {
     color: #1d1414;
     font-family: 'Cal Sans', 'Lexend', Arial, sans-serif;
     font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.banner-img {
+    width: 100vw;
+    max-height: 15vh;
+    display: block;
+    object-fit: contain;
+}
+
+.center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+}
+
+.btn-ingresar {
+    display: block;
+    margin: 22px auto 0 auto;
+    padding: 10px 36px;
+    background: #ffe066;
+    color: #1d1414;
+    border: 1.5px solid #e0c200;
+    border-radius: 8px;
+    font-family: 'Cal Sans', 'Lexend', Arial, sans-serif;
+    font-size: 1.1em;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    transition: background 0.2s, box-shadow 0.2s;
+}
+.btn-ingresar:hover {
+    background: #ffd718;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
 }
